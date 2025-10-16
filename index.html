@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="./assets/img/face-emoji.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+        <link rel="stylesheet" href="style.css">
+		<title>HNG Stage Zero | Profile Card Component</title>
+	</head>
+	<body class="flex">
+		<article class="profileCard" data-testid="test-profile-card">
+			<section class="profileCard__data flex profileCard__data--flex">
+				<div class="profileCard__data__avatar-socials">
+					<figure class="profileCard__data__avatar-socials__avatar">
+						<img
+							src="./assets/img/profile.png"
+							alt="user avatar"
+							data-testid="test-user-avatar"
+						/>
+					</figure>
+					<ul
+						class="profileCard__data__avatar-socials__socials"
+						data-testid="test-user-social-links"
+					>
+						<li class="profileCard__data__avatar-socials__socials__list">
+							<a
+								href="#"
+								class="profileCard__data__avatar-socials__socials__list__link"
+								data-testid="test-user-social-linkedin"
+							>
+								<i class="fa-brands fa-square-linkedin"></i>
+							</a>
+						</li>
+						<li class="profileCard__data__avatar-socials__socials__list">
+							<a
+								href="#"
+								class="profileCard__data__avatar-socials__socials__list__link"
+								data-testid="test-user-social-twitter"
+							>
+								<i class="fa-brands fa-square-x-twitter"></i>
+							</a>
+						</li>
+						<li class="profileCard__data__avatar-socials__socials__list">
+							<a
+								href="#"
+								class="profileCard__data__avatar-socials__socials__list__link"
+								data-testid="test-user-social-github"
+							>
+								<i class="fa-brands fa-square-github"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="profileCard__data__info">
+					<header>
+						<h2
+							class="profileCard__data__info__name"
+							data-testid="test-user-name"
+						>
+							Awoniyi Samuel Oluseyi
+						</h2>
+					</header>
+					<p class="profileCard__data__info__bio" data-testid="test-user-bio">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+						magnam saepe numquam esse velit culpa sit, sed cum praesentium
+						recusandae perspiciatis accusantium voluptates dolorem iste nulla
+						vitae assumenda! Odio, numquam cum inventore, labore doloribus est
+						porro officia praesentium voluptatem accusantium possimus error,
+						pariatur rem suscipit blanditiis.
+					</p>
+				</div>
+			</section>
+			<section class="profileCard__currentTime">
+				<p
+					class="profileCard__currentTime__milliseconds"
+					data-testid="test-user-time"
+				>
+					10:50am
+				</p>
+			</section>
+			<section
+				class="profileCard__hobbies-dislikes flex profileCard__hobbies-dislikes--flex"
+			>
+				<ul class="profileCard__hobbies-dislikes__hobbies">
+					<li class="profileCard__hobbies-dislikes__hobbies__item" data-testid="test-user-hobbies">
+						Lorem, ipsum dolor.
+					</li>
+					<li class="profileCard__hobbies-dislikes__hobbies__item" data-testid="test-user-hobbies">
+						Et, suscipit repellat?
+					</li>
+					<li class="profileCard__hobbies-dislikes__hobbies__item" data-testid="test-user-hobbies">
+						Sed, aut quis.
+					</li>
+				</ul>
+				<ul class="profileCard__hobbies-dislikes__dislikes">
+					<li class="profileCard__hobbies-dislikes__dislikes__item" data-testid="test-user-dislikes">
+						Lorem, ipsum dolor.
+					</li>
+					<li class="profileCard__hobbies-dislikes__dislikes__item" data-testid="test-user-dislikes">
+						Ut, tenetur harum.
+					</li>
+					<li class="profileCard__hobbies-dislikes__dislikes__item" data-testid="test-user-dislikes">
+						Dignissimos, doloremque quasi!
+					</li>
+				</ul>
+			</section>
+		</article>
+	</body>
+</html>
