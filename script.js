@@ -1,4 +1,21 @@
-const currentTime = document.querySelector('.profileCard__currentTime__milliseconds__number')
+const currentTime = document.querySelector(
+	".profileCard__currentTime__milliseconds__number"
+);
 
-let currentDate = new Date().getTime()
-currentTime.textContent = currentDate
+let currentDate = Date.now();
+console.log(currentDate);
+currentTime.textContent = currentDate;
+
+// This code allows an uploaded image to be converted to URL if the component is reused. It takes the image submitted in a form as a file type input.
+
+// const fileInput = document.querySelector('input');
+// const avatarImg = document.querySelector('.profileCard__data__avatar');
+
+//     fileInput.addEventListener('change', (event) => {
+//       const file = event.target.files[0];
+
+//       if (file) {
+//         const objectUrl = URL.createObjectURL(file);
+//         avatarImg.src = objectUrl; // Display the uploaded image
+//       }
+//     });
