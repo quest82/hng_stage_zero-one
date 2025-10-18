@@ -3,7 +3,7 @@ VARIABLE KEYS
 */
 
 :root {
-    --fnt-fam-1: 'Roboto';
+	--fnt-fam-1: "Fraunces";
 }
 
 /* 
@@ -11,11 +11,12 @@ FONT
 */
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(./assets/fonts/Roboto-VariableFont_wdth\,wght.ttf);
-    font-display: swap;
-    font-style: normal;
-    font-weight: 0 999;
+	font-family: "Fraunces";
+	src: url(./assets/fonts/Fraunces_variable/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf)
+		format("truetype-variations");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 1 999;
 }
 
 /* 
@@ -30,9 +31,9 @@ CSS RESET
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding:0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -41,8 +42,8 @@ CSS RESET
   4. Improve text rendering
 */
 body {
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -53,8 +54,8 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 /*
@@ -64,7 +65,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 /*
@@ -77,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 /*
@@ -87,18 +88,166 @@ h6 {
 a,
 a:visited,
 a:active {
-  text-decoration: none;}
+	text-decoration: none;
+}
 
 /* 
 GLOBAL
 */
 
 body {
-    font-size: 1rem;
-    font-family: var(--fnt-fam-1);
+	font-size: 1.05rem;
+	background-color: hsl(0, 6%, 90%);
+	justify-content: center;
+	align-items: center;
+	margin: 2em 1.3em;
+	font-family: "Fraunces";
 }
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.grid {
+	display: grid;
+}
+
+/* 
+LAYOUT
+*/
 
 .profileCard {
-    max-width: 31.25em /*500px*/;
+	background-color: hsl(0, 0%, 100%);
+	max-width: 31.25em /*500px*/;
+	margin-top: 2em;
+	padding: 1.6em 1.4em;
+	border-radius: 15px;
 }
 
+.profileCard__data--grid {
+	place-items: center;
+}
+
+.profileCard__data__socials {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid black;
+}
+
+.profileCard__data__socials--flex {
+	flex-direction: row;
+	gap: 1em;
+}
+
+.profileCard__hobbies-dislikes__hobbies {
+	margin-bottom: 0.5em;
+}
+
+/* 
+TYPOGRAPHY
+*/
+
+.profileCard__data__name {
+	margin-bottom: 0.5em;
+}
+
+.profileCard__data__bio {
+	text-align: center;
+	margin-bottom: 2.4em;
+}
+
+.profileCard__currentTime__milliseconds {
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin-bottom: 1em;
+}
+
+.profileCard__hobbies-dislikes__hobbies__item:nth-of-type(1),
+.profileCard__hobbies-dislikes__dislikes__item:nth-of-type(1) {
+	font-size: 1.2rem;
+	font-weight: 600;
+	list-style: none;
+	margin-left: 0;
+}
+
+.profileCard__hobbies-dislikes__hobbies__item,
+.profileCard__hobbies-dislikes__dislikes__item {
+	margin-left: 1em;
+}
+
+/* 
+ASSET
+*/
+
+.profileCard__data__avatar {
+	border-radius: 50%;
+	height: 310px;
+	width: 315px;
+	margin-bottom: 0.6em;
+}
+
+.profileCard__data__socials__list {
+	list-style: none;
+}
+
+.fa-brands {
+	color: black;
+	font-size: 35px;
+}
+
+.fa-brands:hover,
+.fa-brands:focus {
+	color: blue;
+}
+
+/* 
+DESKTOP
+*/
+
+@media (min-width: 850px) {
+	.profileCard {
+		max-width: 43em;
+		padding: 1.8em;
+		font-size: 1.1rem;
+	}
+
+	.profileCard__data--grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.profileCard__data__socials {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.profileCard__data__name {
+		font-size: 2rem;
+		margin-top: -1em;
+	}
+
+	.profileCard__data__bio {
+		margin-top: -5em;
+	}
+
+	.profileCard__data__avatar {
+		height: 250px;
+		width: 260px;
+	}
+
+	.fa-brands {
+		font-size: 40px;
+	}
+
+	.profileCard__hobbies-dislikes--flex {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.profileCard__hobbies-dislikes__hobbies {
+		border-right: 2px solid black;
+		padding-right: 9em;
+	}
+}
