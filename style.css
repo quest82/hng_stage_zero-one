@@ -198,7 +198,8 @@ ASSET
 }
 
 .fa-brands:hover,
-.fa-brands:focus {
+.fa-brands:focus,
+.fa-brands:active {
 	color: blue;
 }
 
