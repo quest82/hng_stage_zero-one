@@ -12,7 +12,7 @@ FONT
 
 @font-face {
 	font-family: "Fraunces";
-	src: url(../assets/fonts/Fraunces_variable/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf)
+	src: url(../assets/fonts/Fraunces_variable/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf)
 		format("truetype-variations");
 	font-display: swap;
 	font-style: normal;
@@ -100,6 +100,7 @@ body {
 	background-color: hsl(0, 6%, 90%);
 	margin: 2em 1.3em;
 	font-family: "Fraunces";
+	color: hsl(250, 94%, 13%);
 }
 
 .flex {
@@ -115,3 +116,19 @@ body {
 NAV
 */
 
+/* 
+TYPOGRAPHY
+*/
+
+.title,
+.subtitle {
+	font-weight: 700;
+}
+
+.title {
+	font-size: 1.8rem;
+}
+
+.subtitle {
+	font-size: 1.6rem;
+}
