@@ -3,7 +3,7 @@ VARIABLE KEYS
 */
 
 :root {
-	--fnt-fam-1: "Fraunces";
+	--fnt-fam-1: "Outfit";
 }
 
 /* 
@@ -11,8 +11,8 @@ FONT
 */
 
 @font-face {
-	font-family: "Fraunces";
-	src: url(../assets/fonts/Fraunces_variable/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf)
+	font-family: "Outfit";
+	src: url(../assets/fonts/Outfit_variable/Outfit-VariableFont_wght.ttf)
 		format("truetype-variations");
 	font-display: swap;
 	font-style: normal;
@@ -98,8 +98,7 @@ GLOBAL
 body {
 	font-size: 1.05rem;
 	background-color: hsl(0, 6%, 90%);
-	margin: 2em 1.3em;
-	font-family: "Fraunces";
+	font-family: var(--fnt-fam-1);
 	color: hsl(250, 94%, 13%);
 }
 
