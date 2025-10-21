@@ -12,35 +12,100 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="./css/general.css" />
-		<title>About Me</title>
+		<link rel="stylesheet" href="./css/about_me.css" />
+		<title>HNG Stage Zero | About Me</title>
 	</head>
 	<body>
-		<main class="main flex main--flex" data-testid="test-about-page">
-			<section class="hero-img">
-				<img src="./assets/img/about-me.jpg" alt="" />
+		<main class="main grid main--grid" data-testid="test-about-page">
+			<section class="img-container">
+				<img class="hero-img" src="./assets/img/about-me.jpg" alt="" />
 			</section>
 			<section class="aboutMe">
-				<h1>My HNG Diary</h1>
+				<h1 class="aboutMe__title title">My HNG Diary</h1>
 				<section class="aboutMe__bio" data-testid="test-about-bio">
-					<h2 class="subtitle">A Little About Me</h2>
+					<h2 class="subtitle aboutMe__subtitle">A Little About Me</h2>
+					<p class="aboutMe__bio__content">
+						I'm an aspiring web developer with a growing passion for building
+						clean, accessible, and responsive websites. My journey into web
+						development stems from a curiosity about how design and
+						functionality merge to create great user experiences. I’m currently
+						honing my skills in HTML, CSS, and JavaScript, while exploring
+						frameworks and modern development practices to create meaningful,
+						user-centered digital solutions.
+					</p>
 				</section>
 				<section class="aboutMe__goals" data-testid="test-about-goals">
-					<h2 class="subtitle">Goals for HNG</h2>
+					<h2 class="subtitle aboutMe__subtitle">Goals for HNG</h2>
+					<ul class="aboutMe__goals__list">
+						<li class="aboutMe__goals__list__item">
+							Experience a Real-World Work Environment: Gain hands-on experience
+							working in a realistic development setting with deadlines, version
+							control, and teamwork.
+						</li>
+						<li class="aboutMe__goals__list__item">
+							Collaborate Effectively in a Team: Learn to communicate clearly,
+							share ideas, and work together on projects just like in a
+							professional dev team.
+						</li>
+						<li class="aboutMe__goals__list__item">
+							Build Meaningful Connections: Network with other developers,
+							mentors, and designers to grow professionally and find future
+							opportunities.
+						</li>
+						<li class="aboutMe__goals__list__item">
+							Develop a Problem-Solving Mindset: Improve at debugging, reading
+							documentation, and approaching coding challenges with patience and
+							logic.
+						</li>
+						<li class="aboutMe__goals__list__item">
+							Improve Communication and Documentation Skills: Practice writing
+							clean commit messages, documenting code, and explaining your work
+							confidently.
+						</li>
+						<li class="aboutMe__goals__list__item">
+							Build Confidence as a Frontend Developer: Strengthen your ability
+							to take on real projects from concept to deployment and feel ready
+							for industry roles.
+						</li>
+					</ul>
 				</section>
 				<section
 					class="aboutMe__confidence"
 					data-testid="test-about-confidence"
 				>
-					<h2 class="subtitle">Areas Of Low Confidence</h2>
+					<h2 class="subtitle aboutMe__subtitle">Areas Of Low Confidence</h2>
+					<ul class="aboutMe__confidence__list">
+						<li class="aboutMe__confidence__list__item">
+							Lack of Knowledge in Frameworks: My limited understanding of
+							frontend frameworks is a source of low confidence for me.
+						</li>
+						<li class="aboutMe__confidence__list__item">
+							Imposter Syndrome: My tendency to compare myself with more
+							experienced developers can make me doubt my abilities.
+						</li>
+						<li class="aboutMe__confidence__list__item">
+							Fear of Making Mistakes: My fear of breaking code or not getting
+							things right the first time often holds me back from experimenting
+							freely.
+						</li>
+					</ul>
 				</section>
+
 				<section
 					class="aboutMe__futureNote"
 					data-testid="test-about-future-note"
 				>
-					<h2 class="subtitle">Note To Future Self</h2>
+					<h2 class="subtitle aboutMe__subtitle">Note To Future Self</h2>
+					<p class="aboutMe__futureNote__content">
+						Keep going — every late night, every bug fixed, and every new thing
+						learned is shaping you into the developer you dreamed of becoming.
+						Remember where you started, appreciate how far you haveve come, and
+						stay curious. The journey does not end here — it only gets better.
+					</p>
 				</section>
 				<section class="aboutMe__extra" data-testid="test-about-extra">
-					<h2 class="subtitle">Extras</h2>
+					<h2 class="subtitle aboutMe__subtitle">Extras</h2>
+					<p class="aboutMe__extra">No extras for now.</p>
 				</section>
 			</section>
 		</main>

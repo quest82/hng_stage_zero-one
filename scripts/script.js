@@ -8,7 +8,7 @@ currentTime.textContent = currentDate;
 
 // This code allows an uploaded image to be converted to URL if the component is reused. It takes the image submitted in a form as a file type input.
 
-// const fileInput = document.querySelector('input');
+// const fileInput = document.querySelector('profileCard__data__avatar__input');
 // const avatarImg = document.querySelector('.profileCard__data__avatar');
 
 //     fileInput.addEventListener('change', (event) => {

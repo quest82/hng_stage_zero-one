@@ -12,7 +12,7 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="./css/general.css" />
-		<link rel="stylesheet" href="./css/form.css">
+		<link rel="stylesheet" href="./css/form.css" />
 		<script src="./scripts/script.js" defer></script>
 
 		<title>HNG Stage Zero | Contact Form</title>
@@ -21,7 +21,7 @@
 		<form action="" class="form">
 			<h1 class="title form__title">CONTACT ME</h1>
 
-			<div class="form_inputContainer">
+			<div class="form__inputContainer">
 				<div
 					class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex"
 				>
@@ -44,7 +44,7 @@
 					required
 				/>
 			</div>
-			<div class="form_inputContainer">
+			<div class="form__inputContainer">
 				<div
 					class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex"
 				>
@@ -67,17 +67,20 @@
 					required
 				/>
 			</div>
-			<div class="form_inputContainer">
-				<label for="subject">Subject</label>
+			<div class="form__inputContainer">
+				<div class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex">
+					<label for="subject">Subject</label>
+				</div>
 				<input
 					type="text"
 					id="subject"
 					name="subject_of_enquiry"
 					data-testid="test-contact-subject"
+					placeholder="Task"
 					required
 				/>
 			</div>
-			<div class="form_inputContainer">
+			<div class="form__inputContainer">
 				<div
 					class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex"
 				>
@@ -99,16 +102,17 @@
 					required
 				></textarea>
 			</div>
-			<input type="submit" class="btn" data-testid="test-contact-submit" />
+			<input type="submit" class="submitBtn" data-testid="test-contact-submit" placeholder="Submit Form" />
 		</form>
 
 		<section class="success">
 			<div class="success__img">
-				<img src="" alt="" />
+				<img src="./assets/img/form-submitted.png" alt="" />
 			</div>
 			<p class="success__msg" data-testid="test-contact-success">
+				<span class="success__msg--large">Message Delivered</span>
 				Thank you for contacting me. Your message has been delivered
-				successfully. If you would like to know more, click the button below.
+				successfully. If you would like to know more about me, click the button below.
 			</p>
 			<button class="success__btn-redirect">About Me</button>
 		</section>
