@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="./assets/img/face-emoji.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/general.css" />
+		<title>HNG Stage Zero | Contact Form</title>
+	</head>
+	<body>
+		<form action="" class="form">
+			<h1 class="title form__title"></h1>
+
+			<div class="form_inputContainer">
+				<div
+					class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex"
+				>
+					<label for="name">Full Name</label>
+					<p class="errorMessage" data-testid="test-contact-error-name" id="name-error">
+						Valid name required
+					</p>
+				</div>
+				<input
+					type="text"
+					id="name"
+					name="full_name"
+					data-testid="test-contact-name"
+					placeholder="John Doe"
+					aria-describedby="name-error"
+					required
+				/>
+			</div>
+			<div class="form_inputContainer">
+				<div
+					class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex"
+				>
+					<label for="email">Email</label>
+					<p class="errorMessage" data-testid="test-contact-error-email" id="email-error">
+						Valid email required
+					</p>
+				</div>
+				<input
+					type="text"
+					id="email"
+					name="email_address"
+					data-testid="test-contact-email"
+					placeholder="name@example.com"
+					aria-describedby="email-error"
+					required
+				/>
+			</div>
+			<div class="form_inputContainer">
+				<label for="subject">Subject</label>
+				<input
+					type="text"
+					id="subject"
+					name="subject_of_enquiry"
+					data-testid="test-contact-subject"
+					required
+				/>
+			</div>
+			<div class="form_inputContainer">
+				<div
+					class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex"
+				>
+					<label for="message">Message</label>
+					<p class="errorMessage" data-testid="test-contact-error-message" id="message-error">
+						Input at least 10 characters
+					</p>
+				</div>
+				<textarea
+					name="message"
+					id="message"
+					data-testid="test-contact-message"
+					placeholder="Input at least 10 characters"
+					aria-describedby="message-error"
+					required
+				></textarea>
+			</div>
+			<input type="submit" class="btn" data-testid="test-contact-submit" />
+		</form>
+
+		<section class="success">
+			<div class="success__img">
+				<img src="" alt="" />
+			</div>
+			<p class="success__msg" data-testid="test-contact-success">
+				Thank you for contacting me. Your message has been delivered
+				successfully. If you would like to know more, click the button below.
+			</p>
+			<button class="success__btn-redirect">About Me</button>
+		</section>
+	</body>
+</html>
