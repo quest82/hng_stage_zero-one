@@ -3,7 +3,6 @@ const currentTime = document.querySelector(
 );
 
 let currentDate = Date.now();
-console.log(currentDate);
 currentTime.textContent = currentDate;
 
 // This code allows an uploaded image to be converted to URL if the component is reused. It takes the image submitted in a form as a file type input.
@@ -19,3 +18,4 @@ currentTime.textContent = currentDate;
 //         avatarImg.src = objectUrl; // Display the uploaded image
 //       }
 //     });
+

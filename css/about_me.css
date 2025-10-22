@@ -9,7 +9,8 @@ LAYOUT
 .aboutMe__bio,
 .aboutMe__goals,
 .aboutMe__confidence,
-.aboutMe__futureNote {
+.aboutMe__futureNote,
+.aboutMe__extra {
 	margin-bottom: 0.8em;
 }
 
@@ -30,6 +31,7 @@ TYPOGRAPHY
 .subtitle {
 	margin-bottom: 0.3em;
 }
+
 
 /* 
 ASSET

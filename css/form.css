@@ -5,7 +5,12 @@ LAYOUT
 .form,
 .success {
 	padding: 1em;
-	margin: 2em auto;
+	margin: 1em auto;
+}
+
+nav {
+	max-width: 350px;
+	margin: 1em auto; 
 }
 
 .form {
@@ -18,6 +23,11 @@ LAYOUT
 
 .form__inputContainer__labelContainer {
 	margin-bottom: 0.3em;
+}
+
+.form__inputContainer__labelContainer--flex {
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 label,
@@ -49,9 +59,14 @@ textarea {
 	margin-bottom: 1.7em;
 }
 
+.errorInput {
+	border: 1px solid red;
+	background-color: rgb(201, 126, 126);
+}
+
 .success {
-	display: none;
 	max-width: 600px;
+	display: none;
 }
 
 /* 
@@ -62,8 +77,17 @@ TYPOGRAPHY
 	margin-bottom: 0.5em;
 }
 
-.errorMessage {
+label,
+.nameErrorMessage,
+.emailErrorMessage {
+	width: 40%;
+}
+
+.nameErrorMessage,
+.emailErrorMessage {
 	display: none;
+	text-align: right;
+	color: red;
 }
 
 .success__msg {
@@ -92,7 +116,7 @@ TYPOGRAPHY
 
 .submitBtn:hover,
 .success__btn-redirect:hover {
-	background-color: hsla(250, 94%, 13%, 0.87);
+	background-color: orangered;
 }
 
 .success__btn-redirect {
@@ -102,6 +126,10 @@ TYPOGRAPHY
 	outline: none;
 	border-radius: 7px;
 	padding: 0.7em;
+}
+
+.success__img {
+	max-width: 400px;
 }
 
 @media (min-width: 700px) {

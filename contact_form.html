@@ -13,11 +13,32 @@
 		/>
 		<link rel="stylesheet" href="./css/general.css" />
 		<link rel="stylesheet" href="./css/form.css" />
-		<script src="./scripts/script.js" defer></script>
+		<script src="./scripts/form.js" defer></script>
 
-		<title>HNG Stage Zero | Contact Form</title>
+		<title>HNG Stage One | Contact Form</title>
 	</head>
 	<body>
+		<nav class="nav">
+			<ul class="navbar">
+				<li class="navbar__item">
+					<a href="./index.html" class="navbar__item__link" target="_blank">Profile Card</a>
+				</li>
+				<li class="navbar__item">
+					<a href="./about_me.html" class="navbar__item__link" target="_blank"
+						>About Me</a
+					>
+				</li>
+				<li class="navbar__item">
+					<a
+						href="./contact_form.html"
+						class="navbar__item__link"
+						
+						>Contact Me</a
+					>
+				</li>
+			</ul>
+		</nav>
+
 		<form action="" class="form">
 			<h1 class="title form__title">CONTACT ME</h1>
 
@@ -27,7 +48,7 @@
 				>
 					<label for="name">Full Name</label>
 					<p
-						class="errorMessage"
+						class="nameErrorMessage"
 						data-testid="test-contact-error-name"
 						id="name-error"
 					>
@@ -50,7 +71,7 @@
 				>
 					<label for="email">Email</label>
 					<p
-						class="errorMessage"
+						class="emailErrorMessage"
 						data-testid="test-contact-error-email"
 						id="email-error"
 					>
@@ -68,7 +89,9 @@
 				/>
 			</div>
 			<div class="form__inputContainer">
-				<div class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex">
+				<div
+					class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex"
+				>
 					<label for="subject">Subject</label>
 				</div>
 				<input
@@ -85,34 +108,33 @@
 					class="form__inputContainer__labelContainer form__inputContainer__labelContainer--flex flex"
 				>
 					<label for="message">Message</label>
-					<p
-						class="errorMessage"
-						data-testid="test-contact-error-message"
-						id="message-error"
-					>
-						Input at least 10 characters
-					</p>
 				</div>
 				<textarea
 					name="message"
 					id="message"
 					data-testid="test-contact-message"
 					placeholder="Input at least 10 characters"
-					aria-describedby="message-error"
+					minlength="10"
 					required
 				></textarea>
 			</div>
-			<input type="submit" class="submitBtn" data-testid="test-contact-submit" placeholder="Submit Form" />
+			<input
+				type="submit"
+				class="submitBtn"
+				data-testid="test-contact-submit"
+				value="Submit Form"
+			/>
 		</form>
 
 		<section class="success">
 			<div class="success__img">
-				<img src="./assets/img/form-submitted.png" alt="" />
+				<img src="./assets/img/form-submitted.png" alt="Yellow smiley face with thumbs up denoting success in submission" />
 			</div>
 			<p class="success__msg" data-testid="test-contact-success">
 				<span class="success__msg--large">Message Delivered</span>
 				Thank you for contacting me. Your message has been delivered
-				successfully. If you would like to know more about me, click the button below.
+				successfully. If you would like to know more about me, click the button
+				below.
 			</p>
 			<button class="success__btn-redirect">About Me</button>
 		</section>

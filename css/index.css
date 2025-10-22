@@ -10,7 +10,7 @@ body {
 	background-color: hsl(0, 6%, 90%);
 	justify-content: center;
 	align-items: center;
-	margin: 2em 1.3em;
+	margin: 1.5em 1.3em;
 }
 
 /* 
@@ -100,7 +100,7 @@ ASSET
 .fa-brands:hover,
 .fa-brands:focus,
 .fa-brands:active {
-	color: blue;
+	color: orangered;
 }
 
 /* 

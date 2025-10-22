@@ -115,9 +115,31 @@ body {
 NAV
 */
 
+.navbar__item {
+	list-style: none;
+	display: inline-block;
+	margin-left: 0.9em;
+}
+
+.navbar__item__link,
+.backlinks__text__link {
+	color: hsl(250, 94%, 13%);
+	font-weight: 600;
+}
+
+.navbar__item__link:hover,
+.backlinks__text__link:hover {
+	color: orangered;
+}
+
 /* 
 TYPOGRAPHY
 */
+
+a:active {
+		color: orangered;
+
+}
 
 .title,
 .subtitle {
